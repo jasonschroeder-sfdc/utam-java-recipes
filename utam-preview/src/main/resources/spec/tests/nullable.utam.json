@@ -7,7 +7,8 @@
         "css" : "css",
         "returnAll" : true
       },
-      "public" : true
+      "public" : true,
+      "nullable" : true
     },
     {
       "name" : "nullableBasicList",
@@ -15,7 +16,8 @@
         "css" : "css",
         "returnAll" : true
       },
-      "public" : true
+      "public" : true,
+      "nullable" : true
     }
   ]
 }
