@@ -11,6 +11,11 @@
           }
         ]
       }
+    },
+    {
+      "name" : "containerContent",
+      "type" : "container",
+      "public" : true
     }
   ],
   "methods" : [
