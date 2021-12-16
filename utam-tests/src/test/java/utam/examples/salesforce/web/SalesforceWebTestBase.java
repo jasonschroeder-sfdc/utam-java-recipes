@@ -32,6 +32,10 @@ abstract class SalesforceWebTestBase extends UtamWebTestBase {
     log("Navigate to login URL: " + baseUrl);
     getDriver().get(baseUrl);
     Login loginPage = from(Login.class);
+    Object list = loginPage.getNullableBasicList();
+    assert list == null;
+    list = loginPage.getNullableCustomList();
+    assert list == null;
     log(
         String.format(
             "Enter username '%s' and password, wait for landing page Url containing '%s'",

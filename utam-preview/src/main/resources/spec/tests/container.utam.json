@@ -1,0 +1,36 @@
+{
+  "elements" : [
+    {
+      "name" : "container",
+      "selector" : {
+        "css" : "%s",
+        "args" : [
+          {
+            "name" : "hardcodedCss",
+            "type" : "string"
+          }
+        ]
+      }
+    }
+  ],
+  "methods" : [
+    {
+      "name" : "waitForContainer",
+      "compose" : [
+        {
+          "apply" : "waitFor",
+          "args" : [
+            {
+              "type" : "function",
+              "predicate" : [
+                {
+                  "element" : "container"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

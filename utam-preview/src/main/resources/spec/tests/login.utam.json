@@ -77,6 +77,25 @@
   ],
   "elements": [
     {
+      "type" : "utam-records/pageObjects/highlights2",
+      "name" : "nullableCustomList",
+      "selector" : {
+        "css" : "css",
+        "returnAll" : true
+      },
+      "public" : true,
+      "nullable" : true
+    },
+    {
+      "name" : "nullableBasicList",
+      "selector" : {
+        "css" : "css",
+        "returnAll" : true
+      },
+      "public" : true,
+      "nullable" : true
+    },
+    {
       "name": "userName",
       "public": true,
       "type": [
